@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>【献礼70华诞】记录你的时代</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- p1 loding -->
+        <div id="p1" class="p1" style="display:block;">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="loding">
+                <div class="Loanim">
+                    <div class="shade"></div>
+                    <div class="rota">
+                        <img src="./img/rota_03.png" alt="">
+                    </div>
+                </div>
+                <div class="probar">
+                    <div class="plan"></div>
+                </div>
+                <div class="age">
+                    <img src="./img/login_age_07.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- p2 首页 -->
+        <div id="p2" class="p2" style="display:none;">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="telev"></div>
+            <div class="content">
+                <strong>请输入你的出生年份</strong>
+                <div class="option">
+                    <div class="option_con">
+                        <div class="option_con_out">
+                            <input class="inpt" autofocus="autofocus" type="number" oninput="checkField(this.value,0)">
+                            <input type="number" oninput="checkField(this.value,1)">
+                            <input type="number" oninput="checkField(this.value,2)">
+                            <input type="number" oninput="checkField(this.value,3)">
+                        </div>
+                        <strong>年</strong>
+                    </div>
+                </div>
+                <button id="affirm">确定</button>
+            </div>            
+        </div>
+        <!-- p3 -->
+        <div id="p3" class="p3" style="display:none;">
+            <img class="Piiic" style="" src="./img/Piiic2.jpg" alt="">
+            <img class="over" src="./img/over.png" alt="">
+        </div>
+        <!-- p4 -->
+        <div id="p4" class="p4 p3_bg2" style="display:none;">            
+            <div class="p4_skip"></div>
+            <img class="p4_img1" src="./img/p3arraws.png" alt="">
+            <img class="p4_img2" src="./img/p4_text.png" alt="">
+        </div>
+        <!-- p5 -->
+        <div id="p5" class="p5" style="display:none;">
+            <div class="poster">
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="swiper_bg">
+                        <img src="./img/swiper_bg_01.png" alt="">
+                    </div>
+                    <span class="swiper_age">12</span>
+                    <img class="swiper_code" src="./img/swiper_text_01.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="p6" class="p6" style="display:none;">
+            <div class="poster">
+                <div class="poster_mian">                    
+                    <div class="poster_con">
+                        <!-- <div class="poster_center">
+                            <div class="result">                    
+                            <img id="canvas_show" style="position:absolute;z-index:10;width:100%;height:100%;top:0;" src="" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="reminder">
+                <p>左右滑动，查看你的专属时代海报</p>
+                <p>长按保存图片</p>
+                <img class="left1" src="./img/left1.png" alt="">
+                <img class="right1" src="./img/right1.png" alt="">
+                <button class="rut">返回</button>
+            </div>
+        </div>
+
+        <!-- p7 努力加载中。。。 -->
+        <div class="p7" style="display:none;">
+            <!-- <p class="p7_text">努力加载中</p>
+            <p class="p7_int">。。。</p> -->
+            <img src="./img/int.gif" alt="">
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/html2canvas.js"></script>
+<script src="./js/canvas2image.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="./js/sign.js"></script>
+<script>
+    function checkField(i,y){
+        let inp = document.querySelector('.option_con_out').getElementsByTagName('input')
+        inp[y].value = i.split('')[i.length-1]
+        if(i){
+            inp[y].style.border = 'none'
+            inp[y].className = 'none'
+            if(y != 3){                
+                inp[y+1].focus()
+                if(inp[y+1].value){
+                    return
+                }else{
+                    inp[y+1].className = 'inpt'
+                }
+            }else{
+                inp[0].focus()
+            }
+        }else{
+            inp[y].style.borderBottom = '0.15rem solid red'
+            inp[y].className = 'inpt'
+            
+        }
+    }
+    window.onload = function(){        
+        var p1 = document.getElementById('p1')
+        var p2 = document.getElementById('p2')
+        var affirm = document.getElementById('affirm')
+        var p3 = document.getElementById('p3')
+        var p4 = document.getElementById('p4')
+        var p5 = document.getElementById('p5')
+        var p6 = document.getElementById('p6')
+        var sel = document.getElementById('sel')
+        var Loanim = document.querySelector('.Loanim')
+
+        // 获取字体大小
+        var fontSe = parseFloat(document.documentElement.style.fontSize)
+
+        var swiper_img1 = ['swiper_bg_07.png','swiper_bg_06.png','swiper_bg_05.png','swiper_bg_04.png','swiper_bg_03.png','swiper_bg_02.png','swiper_bg_01.png']
+        var swiper_img2 = ['swiper_text_01.png','swiper_text_02.png','swiper_text_03.png']
+
+        Loanim.getElementsByTagName('div')[0].className += ' shade1'
+        Loanim.getElementsByTagName('div')[1].className += ' rota1'
+
+
+        var inp = document.querySelector('.option_con_out').getElementsByTagName('input')
+        var poster_con = document.querySelector('.poster_con')
+        var left1 = document.querySelector('.left1')
+        var right1 = document.querySelector('.right1')
+
+        Loanim.style.opacity = 1
+        setTimeout(() => {
+            p1.style.display = 'none'
+            p2.style.display = 'block'
+            inp[0].focus()
+        },3000)
+
+        var AgeT = []
+        var swiper = document.querySelectorAll('.swiper')
+        affirm.onclick = function(){
+            // 获取时间
+            var myDate = new Date();
+            var tYear = myDate.getFullYear();
+            let Age = ''
+            for(let i=0;i<inp.length;i++){
+                Age += inp[i].value
+            }
+
+            if(Age.length != 4 || Age > tYear){
+                return
+            }
+
+            AgeT[0] = 2019- Age
+            AgeT[1] = 2001 - Age
+            AgeT[2] = 1995 - Age
+            AgeT[3] = 1985 - Age
+            AgeT[4] = 1978 - Age
+            AgeT[5] = 1969 - Age
+            AgeT[6] = 1956 - Age
+            
+            p2.style.display = 'none'
+            p3.style.display = 'block'
+            Longscroll()            
+            if(Age < 1956){
+                AgeT.length = 7                
+            }else if(Age < 1969){
+                AgeT.length = 6
+            }else if(Age < 1978){
+                AgeT.length = 5
+            }else if(Age < 1985){
+                AgeT.length = 4
+            }else if(Age < 1995){
+                AgeT.length = 3
+            }else if(Age < 2001){
+                AgeT.length = 2
+            }else{
+                AgeT.length = 1
+            }
+            for(let i = 0;i<AgeT.length;i++){
+                swiper[i].querySelector('.swiper_age').innerText = AgeT[i]
+                swiper[i].querySelector('.swiper_bg').getElementsByTagName('img')[0].src = './img/' + swiper_img1[i]
+                if(AgeT[i] <= 20){
+                    swiper[i].querySelector('.swiper_code').src = './img/' + swiper_img2[0]
+                }else if(AgeT[i] <= 40){
+                    swiper[i].querySelector('.swiper_code').src = './img/' + swiper_img2[1]
+                }else{
+                    swiper[i].querySelector('.swiper_code').src = './img/' + swiper_img2[2]
+                }
+                
+            }
+        }
+        
+        // 长图滚动
+        function Longscroll(){
+            // 获取屏幕的高度
+            let doEl = document.documentElement.clientHeight
+            let p3pil = p3.getElementsByTagName('img')[0]
+            let p3pii = p3.getElementsByTagName('img')[1]
+
+            // 滚动条滚动
+            let scolT = () => {
+                if(205.975*fontSe - (p3.scrollTop + doEl)<10 || 205.975*fontSe - (p3.scrollTop + doEl)<-10){                    
+                    let timet= setTimeout(() => {
+                        over()
+                        timet = null
+                    },1000)
+                }
+                p3.scrollTop += 1
+            }
+            
+            var timer = setInterval(scolT,20)
+
+            // 触摸屏幕
+            p3.addEventListener('touchstart',(event) => {
+                clearInterval(timer)
+            })
+            // 滑动时
+            p3.addEventListener('touchmove',function(event){                                
+                timer = null
+            })
+            // 离开屏幕
+            p3.addEventListener('touchend',function(event){
+                timer = setInterval(scolT,10)                
+            })
+
+            // 点击跳过
+            p3pii.addEventListener('click',over)
+            function over(){
+                clearInterval(timer)
+                p3.scrollTop = 0
+                p3.style.display = 'none'
+                p4.style.display = 'block'
+            }
+            
+        }
+
+
+        function isIPhoneX(fn){
+                var u = navigator.userAgent;
+                var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+                if (isIOS) {
+                    if (screen.height >= 724 && screen.width == 375){   // 是iphonoeX
+                        p4.className = 'p4 p3_bg3'
+                    }else{  // 不是iphonoeX
+                        p4.className = 'p4 p3_bg2'
+                    } 
+                }
+            }
+        //检测设备是否是iphoneX
+        isIPhoneX();
+
+
+        $(".p4_skip").on('click', function () {
+            poster_con.style.width = AgeT.length*100 +'%'
+            $("#p4").hide().siblings('#p5').show().siblings('.p7').show();
+            let i = AgeT.length-1
+            htmlcanvas(i)
+            
+            function htmlcanvas(i){
+                html2canvas(swiper[i], {
+                    allowTaint: true,
+                    backgroundColor: null,
+                }).then(function (canvas) {
+                    if(i == 0){
+                        $('#p5').hide().siblings('.p7').hide().siblings('#p6').show();
+                        if(poster_con.style.width != '100%'){
+                            left1.style.display = 'block'
+                            right1.style.display = 'block'
+                        }else{
+                            left1.style.display = 'none'
+                            right1.style.display = 'none'
+                        }
+                    }else{
+                        i -=1
+                        htmlcanvas(i)
+                    }
+                    let perter = document.createElement("div")
+                    perter.className = 'poster_center'
+                    let resut = document.createElement("div")
+                    resut.className = 'result'
+                    let resutImg = document.createElement('img')
+                    resut.appendChild(resutImg)
+                    perter.appendChild(resut)
+                    resut.appendChild(canvas)
+                    poster_con.appendChild(perter)
+                    canvas.innerText = '本浏览器不支持canvas'+i
+                    var _context = canvas.getContext('2d')
+                    var _imgSrc = canvas.toDataURL("image/png", 1)
+                    canvas.style.display = 'none'
+                    resutImg.src = _imgSrc
+                    
+                });
+            }
+            
+        });
+
+
+        // p6 返回
+        p6.querySelector('.rut').onclick = function(){            
+            let posc = poster_con
+            posc.innerHTML = ''
+            p6.style.display = 'none'
+            p2.style.display = 'block'
+        }
+        
+    }
+</script>
+</html>
